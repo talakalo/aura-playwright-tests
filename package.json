@@ -1,0 +1,24 @@
+{
+  "name": "aura-playwright-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --ui",
+    "loginTests":"npx playwright test loginTests.spec.ts",
+    "PostTests":"npx playwright test postTests.spec.ts",
+    "dashboardTests":"npx playwright test dashboardTests.spec.ts",
+    "profileTests":"npx playwright test profileTests.spec.ts",
+    "publisherTests":"npx playwright test publisherTests.spec.ts",
+    "scenario1":"npx playwright test scenario1.spec.ts",
+    "scenario2":"npx playwright test scenario2.spec.ts",
+    "scenario4":"npx playwright test scenario4.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.8"
+  }
+}

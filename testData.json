@@ -1,0 +1,21 @@
+{
+  "validUser": {
+    "username": "admin@example.com",
+    "password": "password",
+    "message":"Happy coding and good luck, may the Force be with you!"
+  },
+  "invalidUser": {
+    "username": "wrongUser@example.com",
+    "password": "wrongpass",
+    "message":""
+  },
+  "invalidUserEmpty": {
+    "username": "",
+    "password": "",
+    "message":""
+  },
+  "validPublisher": {
+    "name": "valid Publisher",
+    "Email": "validPublisher@@example.com"
+  }
+}

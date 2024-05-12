@@ -1,0 +1,93 @@
+Test Cases
+
+1. Login Page
+    TC1.1: Test login with valid credentials.
+    TC1.2: Test login with invalid credentials.
+    TC1.3: Test login with empty credentials.
+    TC1.4: Verify redirection after successful login.
+2. Publisher Entity
+    TC2.1: Create a Publisher with valid data.
+    TC2.2: Attempt to create a Publisher with invalid data.
+    TC2.3: Attempt to create a Publisher with empty required fields.
+    TC2.4: View a Publisher.
+    TC2.5: Update a Publisher with valid data.
+    TC2.6: Attempt to update a Publisher with invalid data.
+    TC2.7: Delete a Publisher.
+    TC2.8: Bulk delete multiple Publishers.
+3. Profile Entity
+    TC3.1: Create a Profile with valid data (including a valid Publisher).
+    TC3.2: Attempt to create a Profile without linking a Publisher.
+    TC3.3: View a Profile.
+    TC3.4: Update a Profile with valid data.
+    TC3.5: Delete a Profile.
+    TC3.6: Bulk delete multiple Profiles.
+4. Post Entity
+    TC4.1: Create a Post with valid data (including a valid Publisher).
+    TC4.2: Attempt to create a Post without linking a Publisher.
+    TC4.3: View a Post.
+    TC4.4: Update a Post with valid data.
+    TC4.5: Delete a Post.
+    TC4.6: Bulk delete multiple Posts.
+5. General Functionality
+    TC5.1: Filter Entities by specific criteria.
+    TC5.2: Check response times for different operations to evaluate performance.
+
+
+
+UI Test Cases:
+
+    1.Verify that all the buttons, form inputs, and elements on the login page are 
+    displayed correctly.
+    2.Enter valid credentials on the login page and verify that the user is successfully 
+    logged in and redirected to the appropriate page.
+    3.Enter invalid credentials on the login page and verify that the 
+    appropriate error message is displayed.
+    4.Verify that the "Create new" button on each entity page is displayed and clickable.
+    5.Click on the "Create new" button for each entity and verify 
+    that the respective creation 
+    form is displayed with all the required fields.
+    6.Enter valid data in the creation form for each entity and verify that the data is 
+    successfully saved.
+    7.Enter invalid or incomplete data in the creation form for each entity and verify that 
+    appropriate error messages are displayed.
+    8.Verify that the bulk delete option on each entity page is displayed and functional.
+    9.Select multiple entities using the bulk delete option and verify that they are 
+    successfully deleted.
+    10.Verify that the filtering functionality on each entity page is working correctly 
+    by entering different filter criteria and verifying the displayed results.
+
+Negative Test Cases:
+
+    1.Attempt to create a Publisher without filling in any fields and verify that 
+    appropriate error messages are displayed.
+    2.Try to create a Profile without selecting a Publisher and verify that an error
+     message is displayed indicating the requirement of a Publisher.
+    3.Provide invalid credentials while logging in and verify that the appropriate 
+    error message is displayed.
+    4.Attempt to update a Publisher with invalid data and verify that the update 
+    is not successful and appropriate error messages are displayed.
+    5.Delete a Publisher that is associated with existing Profiles and Posts 
+    and verify that appropriate error messages are displayed indicating the dependencies.
+
+Integration Test Cases:
+
+    1.Create a Publisher, then create a Profile and a Post associated with that Publisher, 
+    and verify that the data is correctly linked and displayed 
+    on the respective entity pages.
+    2.Update a Publisher's details and verify that the updated information 
+    is reflected in the associated Profiles and Posts.
+    3.Delete a Profile and verify that the associated Posts are also
+     deleted or updated accordingly.
+    4.Verify that filtering functionality works correctly when 
+    multiple entities are  present and interconnected.
+
+Sanity Test Cases:
+
+    1.Verify that all the entity pages (Publisher, Profile, and Post) 
+    are accessible and displayed correctly.
+    2.Create a new Publisher, Profile, and Post,
+     and ensure that the data is saved successfully.
+    3.Update the details of an existing Publisher, Profile, and Post,
+     and verify that the changes are reflected accurately.
+    4.Delete a Publisher, Profile, and Post, 
+    and confirm that the entities are removed from the system.
