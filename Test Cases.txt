@@ -91,3 +91,153 @@ Sanity Test Cases:
      and verify that the changes are reflected accurately.
     4.Delete a Publisher, Profile, and Post, 
     and confirm that the entities are removed from the system.
+
+
+
+E2E Test Plan:
+
+1. **Login Page:**
+   - **Description:** Verify the functionality of the login page.
+   - **Steps:**
+     1. Open the web application URL.
+     2. Navigate to the login page.
+     3. Enter valid login credentials (username and password).
+     4. Click on the login button.
+   - **Expected Result:** User should be logged in and directed to the home/dashboard page.
+
+2. **Publisher Entity:**
+   - **Create New Publisher:**
+     - **Description:** Verify the functionality to create a new Publisher entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Publisher section.
+       3. Click on the "Create new" button.
+       4. Fill in the required fields in the form (e.g., name, email).
+       5. Click on the submit/save button.
+     - **Expected Result:** Publisher entity should be successfully created and displayed in the list of Publishers.
+
+   - **View Publisher Details:**
+     - **Description:** Verify the functionality to view details of a Publisher entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Publisher section.
+       3. Click on a specific Publisher from the list.
+     - **Expected Result:** Details of the selected Publisher should be displayed.
+
+   - **Update Publisher Details:**
+     - **Description:** Verify the functionality to update details of a Publisher entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Publisher section.
+       3. Click on the edit icon/button next to a Publisher.
+       4. Modify the details in the form.
+       5. Click on the submit/save button.
+     - **Expected Result:** Publisher entity details should be successfully updated.
+
+   - **Delete Publisher:**
+     - **Description:** Verify the functionality to delete a Publisher entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Publisher section.
+       3. Select the Publisher(s) to be deleted.
+       4. Click on the delete/bulk delete option.
+       5. Confirm the deletion.
+     - **Expected Result:** Selected Publisher(s) should be successfully deleted.
+
+3. **Profile Entity:**
+   - **Create New Profile:**
+     - **Description:** Verify the functionality to create a new Profile entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Profile section.
+       3. Click on the "Create new" button.
+       4. Fill in the required fields in the form (e.g., name, details, select Publisher).
+       5. Click on the submit/save button.
+     - **Expected Result:** Profile entity should be successfully created and displayed in the list of Profiles.
+
+   - **View Profile Details:**
+     - **Description:** Verify the functionality to view details of a Profile entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Profile section.
+       3. Click on a specific Profile from the list.
+     - **Expected Result:** Details of the selected Profile should be displayed.
+
+   - **Update Profile Details:**
+     - **Description:** Verify the functionality to update details of a Profile entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Profile section.
+       3. Click on the edit icon/button next to a Profile.
+       4. Modify the details in the form.
+       5. Click on the submit/save button.
+     - **Expected Result:** Profile entity details should be successfully updated.
+
+   - **Delete Profile:**
+     - **Description:** Verify the functionality to delete a Profile entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Profile section.
+       3. Select the Profile(s) to be deleted.
+       4. Click on the delete/bulk delete option.
+       5. Confirm the deletion.
+     - **Expected Result:** Selected Profile(s) should be successfully deleted.
+
+4. **Post Entity:**
+   - **Create New Post:**
+     - **Description:** Verify the functionality to create a new Post entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Post section.
+       3. Click on the "Create new" button.
+       4. Fill in the required fields in the form (e.g., title, content, select Publisher).
+       5. Click on the submit/save button.
+     - **Expected Result:** Post entity should be successfully created and displayed in the list of Posts.
+
+   - **View Post Details:**
+     - **Description:** Verify the functionality to view details
+        of a Post entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Post section.
+       3. Click on a specific Post from the list.
+     - **Expected Result:** Details of the selected Post should be displayed.
+
+   - **Update Post Details:**
+     - **Description:** Verify the functionality to update details of a Post entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Post section.
+       3. Click on the edit icon/button next to a Post.
+       4. Modify the details in the form.
+       5. Click on the submit/save button.
+     - **Expected Result:** Post entity details should be successfully updated.
+
+   - **Delete Post:**
+     - **Description:** 
+     Verify the functionality to delete a Post entity.
+     - **Steps:**
+       1. Log in to the web application.
+       2. Navigate to the Post section.
+       3. Select the Post(s) to be deleted.
+       4. Click on the delete/bulk delete option.
+       5. Confirm the deletion.
+     - **Expected Result:** Selected Post(s) should be successfully deleted.
+
+5. **Bulk Delete and Filtering:**
+   - **Description:** Verify the functionality of bulk delete and filtering options.
+   - **Steps:**
+     1. Log in to the web application.
+     2. Navigate to any entity section (Publisher, Profile, or Post).
+     3. Select multiple entities using checkboxes.
+     4. Click on the bulk delete option.
+     5. Confirm the deletion.
+     6. Use the filtering option to filter entities based on specific criteria.
+   - **Expected Result:** Bulk deletion and filtering should work as expected, and entities should be filtered accordingly.
+
+6. **Logout:**
+   - **Description:** Verify the functionality of the logout option.
+   - **Steps:**
+     1. Log in to the web application.
+     2. Click on the logout option.
+   - **Expected Result:** User should be logged out and directed to the login page.
